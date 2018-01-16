@@ -83,7 +83,7 @@ public class NodeJSTest {
         assumeFalse(skipMessage, skipTest()); // conditional skip
         String result = nodeJS.getNodeVersion();
 
-        assertEquals("7.4.0", result);
+        assertEquals("8.2.1", result);
     }
 
     @Test
