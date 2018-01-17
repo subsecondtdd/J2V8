@@ -19,6 +19,7 @@ We need jsdom to be able to run browser applications, such as React.
 
 See `BUILDING.md` for details - here is a quick summary:
 
+    git checkout nodejs8 # The branch that adds support for Node 8.2.1 
     source j2v8-cli.sh
     nodejs git clone
     nodejs diff apply
