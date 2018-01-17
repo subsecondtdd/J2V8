@@ -19,12 +19,15 @@ We need jsdom to be able to run browser applications, such as React.
 
 See `BUILDING.md` for details - here is a quick summary:
 
-    git checkout nodejs8 # The branch that adds support for Node 8.2.1 
+    # Check out the branch that adds support for Node 8.2.1 
+    git checkout nodejs8
+    
+    # Configure
     source j2v8-cli.sh
     nodejs git clone
     nodejs diff apply
 
-    # Disable tests, several of them fail :-/
+    # Build (disable tests, several of them fail :-/)
     build -t macos -a x64 -ne --j2v8test="-Dmaven.test.skip=true"
     mvn install
 
